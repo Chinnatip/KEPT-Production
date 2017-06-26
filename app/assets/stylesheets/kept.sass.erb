@@ -37,7 +37,7 @@ div
 .main_canvas
   width: 100vw
   height: 100vh
-  background: url('../asset/pic_main.jpg') no-repeat center center
+  background: url('<%= image_path("pic_main.jpg") %>') no-repeat center center
   background-size: cover
   position: relative
   img._logo
@@ -89,7 +89,7 @@ div
   display: flex
   align-items: center
   &.tutorial
-    background: url('../asset/tutor_cover.jpg') no-repeat center center
+    background: url('<%= image_path("tutor_cover.jpg") %>') no-repeat center center
     background-size: cover
     img.head-left
       width: 32vw
