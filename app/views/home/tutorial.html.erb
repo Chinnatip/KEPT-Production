@@ -1,2 +1,31 @@
-tutor <br>
-<a href="<%= profile_path %>">profile</a>
+<div class="container">
+  <div class="top-cover tutorial">
+    <img src="<%= image_path("tutor_head.png") %>" alt="" class="head-left">
+  </div>
+  <div class="content">
+    <div class="content-list">
+      <img src="<%= image_path("t_fb.png") %>"  alt="">
+      <div class="text">ล็อคอินเข้าสู่ระบบ Facebook</div>
+    </div>
+    <div class="content-list">
+      <img src="<%= image_path("t_back.png") %>" alt="">
+      <div class="text">Kept จะเริ่ม backup ข้อมูลของคุณเข้าสู่มือถือเองอัตโนมัติ</div>
+    </div>
+    <div class="content-list">
+      <img src="<%= image_path("t_setting.png") %>" alt="">
+      <div class="text">ปรับเเต่งการ backup เเละ notification time เพื่อให้ Kept เลือกเนื้อหาที่คุณประทับใจ รวมทั้งช่วงเวลาเตือนความทรงจำ ที่มีคุณภาพ</div>
+    </div>
+    <div class="content-list">
+      <img src="<%= image_path("t_share.png") %>" alt="">
+      <div class="text">เเชร์เรื่องราวกับเพื่อนๆของคุณ !</div>
+    </div>
+  </div>
+
+	<!-- <div class="float-point">
+		<div class="text" id="start_text">กำลังเริ่มต้นโปรแกรม กรุณารอสักครู่!! </div>
+	</div> -->
+  
+  <div class="float-point" id="next_ref">
+    <a href="<%= profile_path %>">ขั้นตอนต่อไป >></a>
+  </div>
+</div>

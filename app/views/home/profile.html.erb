@@ -1,7 +1,83 @@
-profile <br>
-<a href="<%= root_path %>">logout</a>
-<br>
-<br>
-<% 10.times do |t| %>
-  <a href="<%= event_path %>">event-<%= t + 1 %></a> <br>
-<% end %>
+<div class="container">
+  <div
+    class="top-cover profiler"
+    id="go-home"
+    style=" background: url('<%= image_path("profile_cover.jpg") %>') no-repeat center center; background-size: cover ;"
+    >
+    <div class="profile-container">
+      <img id="profile_pic" src="<%= image_path("profile_img.jpg") %>" alt="" class="profile">
+      <span class="profile-text" id="profile_name">Chinnatip Taemkaeo</span>
+    </div>
+
+    <!-- <a href="javascript:FB.logout();" class="_logout _mini_icon" id="FBL_Btn_Lout">
+      <img src="logout.png" alt="">
+    </a> -->
+
+    <a href="<%= root_path %>" class="_logout _mini_icon" id="FBL_Btn_Lout">
+      <img src="<%= image_path("logout.png") %>" alt="">
+    </a>
+
+  </div>
+  <div class="content">
+    <a href="<%= event_path %>" class="content-card" style="background: url('<%= image_path("pic_1.jpg") %>') no-repeat center center; background-size: cover ;">
+      <div class="spanner">
+        <span>18 Jun - 17 May 2017</span>
+        <span class="right">เตือนฉันเมื่อ</span>
+      </div>
+      <div class="scrimmer maitree">
+        <h2>Best In Month</h2>
+        <h4>18Jun - 17May 2017</h4>
+      </div>
+    </a>
+
+    <a href="<%= event_path %>"  class="content-card" style="background: url('<%= image_path("pic_2.jpg") %>') no-repeat center center; background-size: cover ;">
+      <div class="spanner">
+        <span>18 Jun - 17 May 2017</span>
+        <span class="right">เตือนฉันเมื่อ</span>
+      </div>
+      <div class="scrimmer mitr">
+        <h2>Holiday Event</h2>
+        <h4>18Jun - 17May 2017</h4>
+      </div>
+    </a>
+
+    <a href="<%= event_path %>"  class="content-card" style="background: url('<%= image_path("pic_3.jpg") %>') no-repeat center center; background-size: cover ;">
+      <div class="spanner">
+        <span>18 Jun - 17 May 2017</span>
+        <span class="right">เตือนฉันเมื่อ</span>
+      </div>
+      <div class="scrimmer pattaya">
+        <h2>Friendniversary</h2>
+        <h4>18Jun - 17May 2017</h4>
+      </div>
+    </a>
+
+    <a href="<%= event_path %>" class="content-card" style="background: url('<%= image_path("pic_4.jpg") %>') no-repeat center center; background-size: cover ;">
+      <div class="spanner">
+        <span>18 Jun - 17 May 2017</span>
+        <span class="right">เตือนฉันเมื่อ</span>
+      </div>
+      <div class="scrimmer predi">
+        <h2>Life Event</h2>
+        <h4>18Jun - 17May 2017</h4>
+      </div>
+    </a>
+
+    <a href="<%= event_path %>"  id="thailand_re"  class="content-card" style="background: url('<%= image_path("pic_5.jpg") %>') no-repeat center center; background-size: cover ;">
+      <div class="spanner">
+        <span>18 Jun - 17 May 2017</span>
+        <span class="right">เตือนฉันเมื่อ</span>
+      </div>
+      <div class="scrimmer permanent">
+        <h2>Thailand</h2>
+        <h4>18Jun - 17May 2017</h4>
+      </div>
+    </a>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    //redirect to gallery page
+  });
+</script>
