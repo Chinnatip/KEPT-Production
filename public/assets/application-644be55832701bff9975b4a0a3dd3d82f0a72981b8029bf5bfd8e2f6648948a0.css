@@ -1,0 +1,402 @@
+@charset "UTF-8";
+/* line 4, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+body {
+  margin: 0px;
+}
+
+/* line 7, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+div {
+  font-family: "Sukhumvit Set", "Kanit";
+}
+/* line 9, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+div.maitree {
+  font-family: "Maitree";
+}
+/* line 11, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+div.pattaya {
+  font-family: "Sriracha";
+}
+/* line 13, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+div.predi {
+  font-family: "Predi";
+}
+/* line 15, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+div.mitr {
+  font-family: "Pacifico";
+}
+/* line 17, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+div.permanent {
+  font-family: "Permanent+Marker";
+}
+
+/* line 20, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.floating-button {
+  position: fixed;
+  bottom: 4vh;
+  right: 7vw;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 31px;
+  box-shadow: 0 3px 18px #2a2a2a;
+}
+/* line 32, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.floating-button.share {
+  background: #3F51B5;
+  color: #ffffff;
+}
+
+/* line 37, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.main_canvas {
+  width: 100vw;
+  height: 100vh;
+  background: url("/assets/pic_main-a2f38b7863876027a0763f143edd646c53165a899514221e59fe500361a6eb84.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+/* line 43, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.main_canvas img._logo {
+  width: 25vw;
+  min-width: 240px;
+  height: initial;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* line 51, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.main_canvas ._bottom_login {
+  width: 100%;
+  height: 24vh;
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 61, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.main_canvas ._bottom_login a._login {
+  width: 51%;
+  min-width: 260px;
+  max-width: 330px;
+  display: block;
+  text-align: center;
+}
+/* line 67, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.main_canvas ._bottom_login a._login::before {
+  content: "ลงทะเบียนเพื่อเริ่มใช้งาน";
+  color: #2d2d2d;
+  font-size: 14px;
+  font-family: "kanit";
+}
+/* line 72, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.main_canvas ._bottom_login a._login img {
+  width: 100%;
+  margin-top: 3px;
+}
+
+/* line 77, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+._logout._mini_icon {
+  width: 72px;
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+/* line 83, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+._logout._mini_icon img {
+  width: 100%;
+}
+
+/* line 86, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.top-cover {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+/* line 91, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.top-cover.tutorial {
+  background: url("/assets/tutor_cover-f47ac6c6a16ef498f412587208d9e134c9f110a5032b149d38a9b1ce627af07b.jpg") no-repeat center center;
+  background-size: cover;
+}
+/* line 94, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.top-cover.tutorial img.head-left {
+  width: 32vw;
+  max-width: 134px;
+  margin-left: 7vw;
+}
+/* line 98, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.top-cover.profiler {
+  height: 160px;
+  margin-bottom: 32px;
+  position: relative;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  /* line 98, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+  .top-cover.profiler {
+    height: 240px;
+  }
+}
+/* line 105, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.top-cover.profiler .profile-container {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  margin: 0 5%;
+}
+@media screen and (min-width: 768px) {
+  /* line 105, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+  .top-cover.profiler .profile-container {
+    width: 80%;
+    margin: 0 10%;
+  }
+}
+/* line 113, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.top-cover.profiler img.profile {
+  width: 72px;
+  height: 72px;
+  border-radius: 36px;
+  box-shadow: 0 1px 14px #636363;
+  position: absolute;
+}
+/* line 120, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.top-cover.profiler span.profile-text {
+  background: rgba(255, 255, 255, 0.86);
+  line-height: 33px;
+  padding: 1px 9px 1px 12px;
+  color: #616161;
+  margin-left: 80px;
+}
+/* line 126, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.top-cover.event {
+  height: 160px;
+  position: relative;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  /* line 126, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+  .top-cover.event {
+    height: 240px;
+  }
+}
+/* line 132, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.top-cover.event .event-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: rgba(79, 79, 79, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 141, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.top-cover.event .event-container .title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: -12px;
+  text-shadow: 0 3px 12px rgba(45, 45, 45, 0.33);
+}
+/* line 148, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.top-cover.event .event-container .date {
+  background: rgba(255, 255, 255, 0.86);
+  line-height: 28px;
+  padding: 1px 9px 1px 12px;
+  color: #616161;
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* line 158, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.content {
+  padding: 6vw;
+  max-width: 440px;
+  margin: auto;
+}
+/* line 162, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.content.gallery {
+  padding: 8px;
+}
+@media screen and (min-width: 768px) {
+  /* line 158, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+  .content {
+    padding: 3vw;
+  }
+}
+/* line 166, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.content .comment {
+  font-size: 13px;
+  padding: 6px 0 6px;
+  display: flex;
+}
+/* line 170, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.content .comment .split {
+  flex-grow: 1;
+  padding: 0 4px;
+}
+/* line 173, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.content .comment .split.center {
+  text-align: center;
+}
+/* line 175, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.content .comment .split.right {
+  text-align: right;
+}
+/* line 177, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.content .comment .split i.fa {
+  margin-right: 4px;
+}
+/* line 180, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.content .gall-container img {
+  width: 100%;
+}
+/* line 182, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.content .content-card {
+  width: 100%;
+  height: 320px;
+  margin-top: 28px;
+  position: relative;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+/* line 190, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.content .content-card:not(:first-child) {
+  margin-top: 48px;
+}
+/* line 192, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.content .content-card .spanner {
+  position: absolute;
+  top: -22px;
+  font-size: 14px;
+  width: 100%;
+  color: #2d2d2d;
+}
+/* line 198, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.content .content-card .spanner .right {
+  float: right;
+}
+/* line 200, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.content .content-card .scrimmer {
+  width: 100%;
+  height: 320px;
+  background: rgba(54, 54, 54, 0.37);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+/* line 209, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.content .content-card .scrimmer h2 {
+  background: none;
+  margin: 0;
+  font-size: 38px;
+  text-shadow: 0 3px 12px rgba(45, 45, 45, 0.33);
+}
+/* line 214, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.content .content-card .scrimmer h4 {
+  margin: 0;
+  font-size: 21px;
+  text-shadow: 0 2px 9px rgba(45, 45, 45, 0.42);
+}
+/* line 219, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.content .content-list {
+  background: #FFFFFF;
+  border: 1px solid #e3e3e3;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
+  display: flex;
+  min-height: 96px;
+  align-items: center;
+  padding: 0 16px;
+}
+@media screen and (max-width: 640px) {
+  /* line 219, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+  .content .content-list {
+    min-height: 72px;
+  }
+}
+/* line 230, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.content .content-list:not(:first-child) {
+  margin-top: 14px;
+}
+/* line 232, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.content .content-list img {
+  width: 48px;
+  height: 48px;
+  margin-left: 20px;
+}
+@media screen and (max-width: 640px) {
+  /* line 232, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+  .content .content-list img {
+    width: 32px;
+    height: 32px;
+    margin-left: 12px;
+  }
+}
+/* line 240, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.content .content-list .text {
+  flex-grow: 1;
+  margin: 24px 14px 24px 36px;
+  color: #949494;
+  font-size: 15px;
+}
+@media screen and (max-width: 640px) {
+  /* line 240, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+  .content .content-list .text {
+    margin: 12px 12px 12px 20px;
+  }
+}
+
+/* line 248, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.float-point {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  height: 58px;
+  font-size: 17px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background-image: linear-gradient(90deg, #8599E7 3%, #53A6F1 98%);
+  color: #ffffff;
+  z-index: 20;
+}
+/* line 261, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.float-point a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* line 264, /Users/Chin/project/kept/app/assets/stylesheets/kept.sass.erb */
+.float-point a:focus, .float-point a:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
