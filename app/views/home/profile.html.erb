@@ -1,0 +1,7 @@
+profile <br>
+<a href="<%= root_path %>">logout</a>
+<br>
+<br>
+<% 10.times do |t| %>
+  <a href="<%= event_path %>">event-<%= t + 1 %></a> <br>
+<% end %>

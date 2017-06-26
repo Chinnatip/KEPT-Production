@@ -1,0 +1,263 @@
+//Init sass pre-processing
+//sass --watch app/project.sass:app/style/project.css
+
+body
+  margin: 0px
+
+div
+  font-family: "Sukhumvit Set" , "Kanit"
+  &.maitree
+    font-family: "Maitree"
+  &.pattaya
+    font-family: "Sriracha"
+  &.predi
+    font-family: "Predi"
+  &.mitr
+    font-family: "Pacifico"
+  &.permanent
+    font-family: "Permanent+Marker"
+
+.floating-button
+  position: fixed
+  bottom: 4vh
+  right: 7vw
+  width: 60px
+  height: 60px
+  border-radius: 30px
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 31px
+  box-shadow: 0 3px 18px #2a2a2a
+  &.share
+    background: #3F51B5
+    color: #ffffff
+
+
+.main_canvas
+  width: 100vw
+  height: 100vh
+  background: url('../asset/pic_main.jpg') no-repeat center center
+  background-size: cover
+  position: relative
+  img._logo
+    width: 25vw
+    min-width: 240px
+    height: initial
+    position: absolute
+    top: 37%
+    left: 50%
+    transform: translate(-50%,-50%)
+  ._bottom_login
+    width: 100%
+    height: 24vh
+    position: absolute
+    bottom: 0
+    background: rgba(255, 255, 255, 0.82)
+    display: flex
+    align-items: center
+    justify-content: center
+    //filter: blur(1px)
+    a._login
+      width: 51%
+      min-width: 260px
+      max-width: 330px
+      display: block
+      text-align: center
+      &::before
+        content: "ลงทะเบียนเพื่อเริ่มใช้งาน"
+        color: #2d2d2d
+        font-size: 14px
+        font-family: 'kanit'
+      img
+        width: 100%
+        margin-top: 3px
+
+._logout
+  &._mini_icon
+    width: 72px
+    display: block
+    position: absolute
+    top: 8px
+    right: 10px
+    img
+      width: 100%
+
+.top-cover
+  width: 100%
+  height: 120px
+  display: flex
+  align-items: center
+  &.tutorial
+    background: url('../asset/tutor_cover.jpg') no-repeat center center
+    background-size: cover
+    img.head-left
+      width: 32vw
+      max-width: 134px
+      margin-left: 7vw
+  &.profiler
+    height: 160px
+    margin-bottom: 32px
+    position: relative
+    cursor: pointer
+    @media screen and (min-width: 768px)
+      height: 240px
+    .profile-container
+      position: absolute
+      bottom: 0
+      width: 90%
+      margin: 0 5%
+      @media screen and (min-width: 768px)
+        width: 80%
+        margin: 0 10%
+    img.profile
+      width: 72px
+      height: 72px
+      //bottom: -36px
+      border-radius: 36px
+      box-shadow: 0 1px 14px #636363
+      position: absolute
+    span.profile-text
+      background: rgba(255, 255, 255, 0.86)
+      line-height: 33px
+      padding: 1px 9px 1px 12px
+      color: #616161
+      margin-left: 80px
+  &.event
+    height: 160px
+    position: relative
+    cursor: pointer
+    @media screen and (min-width: 768px)
+      height: 240px
+    .event-container
+      position: absolute
+      height: 100%
+      width: 100%
+      text-align: center
+      background: rgba(79, 79, 79, 0.35)
+      display: flex
+      justify-content: center
+      align-items: center
+      .title
+        margin: 0
+        font-size: 36px
+        font-weight: 600
+        color: #ffffff
+        margin-top: -12px
+        text-shadow: 0 3px 12px rgba(45, 45, 45, 0.33)
+      .date
+        background: rgba(255, 255, 255, 0.86)
+        line-height: 28px
+        padding: 1px 9px 1px 12px
+        color: #616161
+        position: absolute
+        bottom: 3px
+        left: 50%
+        transform: translateX(-50%)
+
+.content
+  padding: 6vw
+  max-width: 440px
+  margin: auto
+  &.gallery
+    padding: 8px
+  @media screen and (min-width: 768px)
+    padding: 3vw
+  .comment
+    font-size: 13px
+    padding: 6px 0 6px
+    display: flex
+    .split
+      flex-grow: 1
+      padding: 0 4px
+      &.center
+        text-align: center
+      &.right
+        text-align: right
+      i.fa
+        margin-right: 4px
+  .gall-container
+    img
+      width: 100%
+  .content-card
+    width: 100%
+    height: 320px
+    margin-top: 28px
+    position: relative
+    cursor: pointer
+    &:not(:first-child)
+      margin-top: 48px
+    .spanner
+      position: absolute
+      top: -22px
+      font-size: 14px
+      width: 100%
+      .right
+        float: right
+    .scrimmer
+      width: 100%
+      height: 320px
+      background: rgba(54, 54, 54, 0.37)
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      color: #ffffff
+      h2
+        background: none
+        margin: 0
+        font-size: 38px
+        text-shadow: 0 3px 12px rgba(45, 45, 45, 0.33)
+      h4
+        margin: 0
+        font-size: 21px
+        text-shadow: 0 2px 9px rgba(45, 45, 45, 0.42)
+
+  .content-list
+    background: #FFFFFF
+    border: 1px solid #e3e3e3
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.03)
+    border-radius: 6px
+    display: flex
+    min-height: 96px
+    align-items: center
+    padding: 0 16px
+    @media screen and (max-width: 640px)
+      min-height: 72px
+    &:not(:first-child)
+      margin-top: 14px
+    img
+      width: 48px
+      height: 48px
+      margin-left: 20px
+      @media screen and (max-width: 640px)
+        width: 32px
+        height: 32px
+        margin-left: 12px
+    .text
+      flex-grow: 1
+      margin: 24px 14px 24px 36px
+      color: #949494
+      font-size: 15px
+      @media screen and (max-width: 640px)
+        margin: 12px 12px 12px 20px
+
+.float-point
+  width: 100%
+  height: 90px
+  display: flex
+  height: 58px
+  font-size: 17px
+  justify-content: center
+  align-items: center
+  position: fixed
+  bottom: 0
+  background-image: linear-gradient(90deg, #8599E7 3%, #53A6F1 98%)
+  color: #ffffff
+  z-index: 20
+  a
+    color: #ffffff
+    text-decoration: none
+    &:focus , &:active
+      color: #ffffff
+      text-decoration: none
