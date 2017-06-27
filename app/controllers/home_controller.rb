@@ -1,4 +1,7 @@
 class HomeController < ApplicationController
+
+  before_action :authenticate_user!, only: [:tutorial, :profile , :event]
+
   def index
 
   end

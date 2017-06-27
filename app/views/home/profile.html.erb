@@ -5,17 +5,20 @@
     style=" background: url('<%= image_path("profile_cover.jpg") %>') no-repeat center center; background-size: cover ;"
     >
     <div class="profile-container">
-      <img id="profile_pic" src="<%= image_path("profile_img.jpg") %>" alt="" class="profile">
-      <span class="profile-text" id="profile_name">Chinnatip Taemkaeo</span>
+      <img id="profile_pic" src="<%= current_user[:image] %>" alt="" class="profile">
+      <span class="profile-text" id="profile_name"><%= current_user[:name] %></span>
     </div>
 
     <!-- <a href="javascript:FB.logout();" class="_logout _mini_icon" id="FBL_Btn_Lout">
       <img src="logout.png" alt="">
     </a> -->
 
-    <a href="<%= root_path %>" class="_logout _mini_icon" id="FBL_Btn_Lout">
-      <img src="<%= image_path("logout.png") %>" alt="">
-    </a>
+    <% if current_user %>
+      <a href="<%= destroy_user_session_path %>"  class="_logout _mini_icon" id="FBL_Btn_Lout" data-method="delete" >
+        <img src="<%= image_path("logout.png") %>" alt="">
+      </a>
+    <% end %>
+      <!--  -->
 
   </div>
   <div class="content">

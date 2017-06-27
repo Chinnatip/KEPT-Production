@@ -1,6 +1,6 @@
 {
-  "name": "Kept",
-  "short_name": "Kept App",
+  "name": "ฝากเอาไว้ในมือถือ",
+  "short_name": "Kept",
   "icons": [{
     "src": "icons/128x128.png",
       "sizes": "128x128",

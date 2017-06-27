@@ -6,13 +6,16 @@
 		<div align="center" id="content_name"></div>
 	  </div>
 
-	  <!-- <a href="javascript:FB.login();" class="_login" id="FBL_Btn_Lin">
-      <img src="<%= image_path("facebook_login.png") %>" alt="">
-    </a> -->
-
-    <a href="<%= home_tutorial_path %>"  class="_login" id="FBL_Btn_Lin">
-      <img src="<%= image_path("facebook_login.png") %>" alt="">
-    </a>
+    <% unless current_user %>
+      <a href="<%= user_facebook_omniauth_authorize_path %>"  class="_login" >
+        <img src="<%= image_path("facebook_login.png") %>" alt="">
+      </a>
+    <% else %>
+      <!-- < % = current_user[:name] % > -->
+      <a href="<%= destroy_user_session_path %>"  class="_logout" data-method="delete" >
+        <img src="<%= image_path("logout.png") %>" alt="">
+      </a>
+    <% end %>
 
   </div>
 </div>
