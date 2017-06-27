@@ -2,10 +2,10 @@
   <div
     class="top-cover profiler"
     id="go-home"
-    style=" background: url('<%= image_path("profile_cover.jpg") %>') no-repeat center center; background-size: cover ;"
+    style=" background: url('<%= @cover_img %>') no-repeat center center; background-size: cover ;"
     >
     <div class="profile-container">
-      <img id="profile_pic" src="<%= current_user[:image] %>" alt="" class="profile">
+      <img id="profile_pic" src="<%= @full_profile %>" alt="" class="profile">
       <span class="profile-text" id="profile_name"><%= current_user[:name] %></span>
     </div>
 
