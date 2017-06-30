@@ -18,10 +18,15 @@
         <img src="<%= image_path("logout.png") %>" alt="">
       </a>
     <% end %>
-      <!--  -->
+    <!--  -->
 
   </div>
   <div class="content">
+    <a href="#" class="content-card" style="height: inherit;">
+      <% @imgs.each do |img| %>
+        <img src="<%= img %>" alt="" style="width: 30%; max-width: 120px;">
+      <% end %>
+    </a>
     <a href="<%= event_path %>" class="content-card" style="background: url('<%= image_path("pic_1.jpg") %>') no-repeat center center; background-size: cover ;">
       <div class="spanner">
         <span>18 Jun - 17 May 2017</span>
