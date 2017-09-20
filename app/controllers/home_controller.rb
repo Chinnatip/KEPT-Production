@@ -12,7 +12,7 @@ class HomeController < ApplicationController
 
   def profile
     # access_token = current_user[:fb_token]
-    access_token = "EAACEdEose0cBAIjC2J1f9EhyZAjXlpGVffkZAZBpIwYYlanvZAN265Hz4p52ZCy218y6Vil7s73xEqxuPQgaP7erJBzVOGJj5f1ZCZAZBrT84kk2XZC2fc1UU7JWpjKFE3mWmUZBZCxKVchSBkBemxz1xYK6ZBxHxw0tDERafB12l6ZALVn737CUUZBHD8V9VbO3PWbpIZD"
+    access_token = "EAACEdEose0cBAFe2sPv2exTrh70ZBFRhrVLCQZBgrw4lfItw2wT0ZBASHQy1ZBipl34UcMaHhtVkEDb88qBIRzbdWfcpG114LLWSQF7zGj65beS9hRS6V490QfCS8pizqxg9ZBJ1kPj2YkHRwrZAdjkNAaWvtZAzFtFZATyOsVSUciH3xCrCeYTik7NDarJCRJ4ZD"
     @graph       = Koala::Facebook::API.new(access_token)
     image_profile = @graph.get_object("me?fields=cover,picture.width(800).height(800)")
     collection   = gallery_collection(access_token)
